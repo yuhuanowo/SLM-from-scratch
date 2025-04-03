@@ -1,6 +1,5 @@
 import datasets
 import transformers
-# 替換 swanlab 為 wandb
 import wandb
 from transformers.integrations import WandbCallback
 import os
@@ -13,7 +12,7 @@ from datasets import Dataset, load_from_disk, disable_caching
 import logging
 import numpy as np
 from tqdm import tqdm
-import argparse  # 添加命令列參數解析
+import argparse 
 
 # 設置日誌級別
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(message)s')
